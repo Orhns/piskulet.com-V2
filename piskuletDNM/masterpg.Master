@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpg.master.cs" Inherits="piskuletDNM.masterpg" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="Stylesheet" href="~/StyleSheet1.css" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            font-size: large;
+        }
+        .auto-style2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 8px;
+            background-color: black;
+            border: 10px white;
+            border-radius: 10px;
+            max-width: 1000px;
+            margin: auto;
+            max-height: 35px;
+            text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container" style="width:1000px;margin:auto">
+            <div class="auto-style2" style=" height:50px; margin:auto; background-color:black;">
+                <a href="home.aspx"><asp:Image ID="Image2" runat="server" ImageUrl="~\images\icons2\cycling.png" style="margin-left:10px;" Height="45px" Width="45px"/></a>&nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label666" runat="server" CssClass="auto-style1" ForeColor="White" Text="Piskulet.com"></asp:Label>
+                    <a href="Contact.aspx"><asp:Image ID="Image4" runat="server" Height="40px" style="margin-left:720px;" ImageUrl="~/images/icons2/email.png" Width="40px" /></a>
+                </strong>
+            </div>
+            <div style="width:1000px; height:5px; margin:auto;"></div>
+                <div class="columns" style="height:600px; width:max-content">
+                    <div class="leftColumn" style="height:600px; width:70px; float:left;background-color: rgb(0, 0, 0);">
+                        <div class="leftbtns" style="margin-top:15px;">
+                            <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                          
+                                <ItemTemplate>
+                                    <a href="bicycleType.aspx?Id=<%# Eval("Id") %>" ><asp:Image  ID="Image1" runat="server" style="max-width:100%; padding-inline:2px;" ImageUrl='<%# Eval("bike_Icon") %>'/></a>
+                                </ItemTemplate>
+                            
+                            </asp:DataList>
+                        </div>
+                    </div>
+                    <div class="rightColumn" style="height:600px; width:900px; margin-left:100px; background-color:lightgrey;">
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                         </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            <div style="height:15px; width:1000px; margin:auto;"></div>
+            <div class="bottom-container" style="width:1000px; height:auto; padding-top:5px; display:flex; ">
+                <div class="inner-container" style="margin-left:100px; display:flex; height:auto;">
+                    <div class="inner-content" style="height:auto;  max-width:800px; padding:20px; float:left;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                         </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="stickyBud" style=" height:auto; width:70px; float:right;">
+
+                        <a href="#"> <asp:Image ID="Image3" runat="server" Height="50px" style="top:650px; position:sticky; transform:rotate(90deg)" ImageUrl="~/images/icons2/windcrusher.png" Width="50px" /></a>
+
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </form>
+</body>
+</html>
+<%-- <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>

@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="piskuletDNM.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="Stylesheet" href="~/StyleSheet1.css" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 52%;
+        }
+        .auto-style2 {
+            width: 80%;
+        }
+        .auto-style3 {
+            width: 13px;
+        }
+        .auto-style4 {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            border-bottom-right-radius: 25px;
+        }
+        .auto-style5 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 8px;
+            background-color: #99CCFF;
+            border: 10px white;
+            border-radius: 10px;
+            max-width: 1000px;
+            margin: auto;
+            max-height: 35px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+        }
+        .auto-style6 {
+            width: 13px;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container" style="width:1000px;margin:auto">
+            <div class="auto-style5" style=" height:50px; margin:auto; ">
+                <a href="home.aspx"><asp:Image ID="Image2" runat="server" ImageUrl="~\images\icons2\cycling.png" Height="45px" Width="45px"/></a>
+            </div>
+            <div style="width:1000px; height:5px; margin:auto;"></div>
+                <div class="columns" style="height:600px; width:max-content">
+                    <div class="leftColumn" style="height:600px; width:70px; float:left;background-color: rgb(192, 192, 192);">
+                        <table class="auto-style2">
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <table class="auto-style1">
+                            <tr>
+                                <td >&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style3"><a href="bisikletTurleri.aspx"><strong>Sayfalar</strong></a></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style3"><a href="resimler.aspx"><strong>Resimler</strong></a></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style6">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style3">&nbsp;</td>
+                            </tr>
+                            </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="auto-style4" style="height:600px; width:900px; margin-left:100px; ">
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                         </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            <div style="height:15px; width:1000px; margin:auto;"></div>
+            <div class="bottom-container" style="width:1000px; height:650px; padding-top:5px;  ">
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
+<%-- <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>

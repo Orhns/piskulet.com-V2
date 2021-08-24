@@ -1,0 +1,53 @@
+﻿body {
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    padding-top: 8px;
+    background-color: black;
+    border: 10px white;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: auto;
+    max-height:35px;
+}
+
+.leftColumn {
+    position: absolute;  
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.rightColumn {
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    border-bottom-right-radius: 25px;
+}
+
+.inner-content {   
+    background-color: white;
+    border: 10px black;
+    border-style: solid dashed solid solid;
+    background-clip: border-box;
+    border-radius: 50px;
+    border-top-right-radius: 10px;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 100px;
+    display: block;
+    background-image: url(images/otherpages/nightBig.jpg);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 100%;
+}
+

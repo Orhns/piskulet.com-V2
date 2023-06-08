@@ -10,7 +10,7 @@ namespace piskuletDNM
     {
         public SqlConnection baglanti() 
         {
-            SqlConnection baglan=new SqlConnection(@"Data Source=DESKTOP-US58GP1\SQLEXPRESS;Initial Catalog=bikes_DB;Integrated Security=True");
+            SqlConnection baglan=new SqlConnection(@"Data Source=C:\Users\Phoenix\Documents\GitHub\piskulet.com-V2\bikes_DB;Integrated Security=True");
             baglan.Open();
             return baglan;
         }

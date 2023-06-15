@@ -1,6 +1,8 @@
 # piskulet.com-V2
 
-ASP.NET website with admin panel using SQL database
+Built a dynamic version of the “piskulet.com” website.  
+Have used web forms and SQL server DB to store and retrieve all content of the pages by tables. 
+Added an Admin Panel.                                                                                
 <br>
 <hr>
 <p align="center">

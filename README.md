@@ -13,7 +13,4 @@ Added an Admin Panel.
 <p align="center">
   <img src="piskulet.com v2_ss/4.png" width="600" alt="accessibility text">
 </p>
-<p align="center">
-  <img src="piskulet.com v2_ss/5.png" width="600" alt="accessibility text">
-</p>
 

@@ -1,7 +1,7 @@
 # piskulet.com-V2
 
 Built a dynamic version of the “piskulet.com” website.  
-Have used web forms and SQL server DB to store and retrieve all content of the pages by tables. 
+Have used web forms and MS Server & MSSQL DB to store and retrieve all content of the pages by tables. 
 Added an Admin Panel.                                                                                
 <hr>
 <p align="center">
